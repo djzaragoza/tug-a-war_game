@@ -20,7 +20,7 @@ const io = socketio(app);
 let playerOneScore = 0;
 let playerTwoScore = 0;
 
-io.on('connection', (socket) => } {
+io.on('connection', (socket) =>  {
     const broadcastScore = () => {
         io.emit('score', {
             playerOne: playerOneScore,
